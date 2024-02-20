@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 
 app = Flask(__name__)
-app.secret_key = 'votre_clé_secrète'
+app.secret_key = 'Diavangama'
 
 @app.route('/')
 def index():
@@ -21,10 +21,9 @@ def login():
 
     return render_template('login.html')
 
-
 @app.route('/success')
 def success():
-    return 'Authentification réussie !!!!!!!!!!!'
+    return 'Authentification réussie !'
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True, port=5000) 
